@@ -1,0 +1,390 @@
+@charset "utf-8";
+
+/*清除浏览器默认样式*/
+body,ul,li,p,h1,h2,from,img{
+	margin:0 auto;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	}
+
+/*全局控制样式*/
+body{
+	font-family: "微软雅黑", Helvetica, Arial, sans-serif; 
+	font-size: 14px; 
+	background: #D6E5F7;
+}
+a{
+	text-decoration: none; 
+	cursor: pointer;
+}
+input,textarea{outline: none;}
+
+/*head begin*/
+header{
+	width: 100%; 
+	height: 50px; 
+	background: #2F0068; 
+	position: fixed;
+	z-index: 2;
+	top: 0;
+}
+#head{
+	width: 1200px; 
+	margin: 0 auto;
+}
+#head .logo{
+	position: absolute;
+	left: 30px;
+	top:8px;
+}
+#head .left{float: left;}
+#head .left li{
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	margin-right: 50px;
+	cursor: pointer;
+	}
+#head .right{float: right;}
+#head .right li{
+	float: right;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 50px;
+	cursor: pointer;	
+	}
+#head a{
+	color: #FFFFFF; 
+	font-size: 15px;
+}
+#head a:visited{color:#FFFFFF;}
+#head a:hover{color:#FFED00;}
+/*head end*/
+
+/*nav begin*/
+nav{
+	width: 100%;
+	height: 50px;
+	background: #2F0068;
+	padding-top: 50px;
+}
+nav ul{text-align: center;}
+nav form{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	gap: 5px;
+}
+nav .input1{
+	height: 35px; 
+	line-height: 35px;
+}
+nav .input2{
+	height: 25px; 
+	line-height: 35px;
+	width: 30px; 
+	height: 30px;
+	transition: all 0.2s ease-in 0s;
+}
+nav .input2:hover{transform: scale(1.2);}
+/*nav end*/
+
+/*bnner begin*/
+#banner{
+	width: 1225px;
+	height: 404px;
+	margin: 0 auto;
+}
+#banner .left{
+	width: 800px;
+	float: left;
+	margin: 0 auto;
+	position: relative;
+}
+#banner #item{
+	width: 100%;
+	height: 100%;
+}
+#banner #item .item{
+	position: absolute;
+	opacity: 0;
+	transition: all 2s;
+}
+#banner #item .item.active{
+	opacity: 1;
+}
+#banner .left img{
+	width: 100%;
+}
+#banner #btn-left{
+	width: 30px;
+	height: 70px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 70px;
+	color: white;
+	background-color:rgba(0,0,0,0.5);
+	float: left;
+	margin-top: 25%;
+	z-index: 10;
+	transform: translateY(-60%);
+	cursor: pointer;
+	opacity: 0;
+}
+#banner:hover #btn-left{
+	opacity: 1;
+}
+#banner #btn-right{
+	width: 30px;
+	height: 70px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 70px;
+	color: white;
+	background-color:rgba(0,0,0,0.5);
+	float: right;
+	margin-top: 25%;
+	z-index: 10;
+	cursor: pointer;
+	opacity: 0;
+	transform: translateY(-60%);
+}
+#banner:hover #btn-right{
+	opacity: 1;
+}
+#banner #circle{
+	height: 20px;
+	display: flex;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 47%;
+	margin-left: 42.5%;
+}
+#banner .circle{
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	border: 2px solid white;
+	background: rgba(0,0,0,0.3);
+	cursor: pointer;
+	margin: 5px;
+}
+#banner .white{
+	background-color: #FFFFFF;
+}
+#banner p{
+	font-size: 25px;
+	font-weight: bold;
+	text-indent: 25px;
+	color: black; /* 填充颜色为黑色 */
+	text-shadow: 
+		1px 1px 0 white, 
+		-1px -1px 0 white, 
+		-1px 1px 0 white, 
+		1px -1px 0 white, 
+		1px 0 0 white, 
+		-1px 0 0 white, 
+		0 1px 0 white, 
+		0 -1px 0 white; 
+	margin-top: -7.5%;
+}
+
+#banner .right{
+	float: right;
+	border: 2px solid #737105;
+}
+#banner .right .blinds{
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+	transition: all 0.3s ease-in 0s;
+}
+#banner .right .blinds img{
+	width: 400px;
+	height: 400px;
+}
+#banner .right .blinds li{ 
+	position: relative; 
+	width: 400px;
+	height: 80px;
+	overflow: hidden;
+	transition: all 0.3s ease-in 0s;
+}
+#banner .right .blinds li .text{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	font-size: 16px;
+	color: #fff;
+	width: 400px;;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	background-color: rgba(0,0,0,0.5);
+	transition: all 0.3s ease-in 0s;
+}
+#banner .right .blinds:hover li{
+	height: 0px;
+}
+#banner .right .blinds li:hover{
+	height: 400px;
+}
+/*banner end*/
+
+/*content begin*/
+#con1{
+	width: 1200px;
+	height: 570px;
+	margin: 0 auto;
+	margin-top: 20px;
+	border-bottom: 3px solid #ccc;
+}
+#con1 h1{
+	text-align: left; 
+	line-height: 40px;
+	margin-top: 15px;
+	margin-left: -10px;
+	margin-bottom: -5px;
+}
+#con1 h1 img{
+	line-height: 40px; 
+	vertical-align: middle;
+}
+#con1 ul{margin-left: 35px;}
+#con1 ul li{
+	width: 135px;
+	height: 200px;
+	float: left;
+	text-align: center;
+	padding: 20px 5px;
+}
+#con1 .poster{
+	float: left;
+	width: 135px;
+	height: 200px;
+	overflow: hidden;
+	border: 2px solid #000000;
+}
+#con1 .poster img{
+	width: 135px;
+	height: 200px;
+	transition: all .3s ease-in 0s;
+}
+#con1 li:hover .poster img{
+	width: 135px;
+	height: 200px;
+	overflow: hidden;
+	transform: scale(1.2);
+}
+#con1 .title{
+	width: 135px;
+	height: 35px;
+	margin-top: 167px;
+	margin-left: 2px;
+	position: absolute;
+	color:rgba(0,0,0,0);
+	background: rgba(112,112,112,0);
+	transition: all 0.3s ease-in 0s
+}
+#con1 .title p{
+		line-height: 35px;
+		font-weight: bold;
+	}
+#con1 li:hover .title{
+	background: rgba(112,112,112,0.7);
+	color:rgba(252,252,252,1.00);
+	z-index: 9999;
+}
+
+#con2{
+	width: 1200px;
+	height: 400px;
+	margin: 0 auto;
+	text-align: center;
+}
+#con2 h1{
+	padding: 15px;
+	color:#E9C100;
+}
+#con2 .coming{
+	width: 1160px;
+	height: 270px;
+	border: 1px solid #000;
+	margin: 0px auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	overflow: hidden;
+}
+#con2 ul{
+	width: 3420px;
+	height: 270px;
+	animation: marquee 24s linear 0s infinite normal;
+}
+@keyframes marquee {
+	from{
+		margin-left: 0;
+	}
+	to{
+		margin-left: -2280px;
+	}
+}
+#con2 ul span{
+	float: left;
+	width: 170px;
+	height: 270px;
+	margin: 0 10px;;
+	background: #232323;
+	border-radius: 15px;;
+}
+#con2 ul img{
+	width: 135px;
+	height: 200px;
+	margin-top: 15px;
+	vertical-align: top;
+	border: 3px #C0C0C0 solid;
+}
+#con2 ul p{color: #FFFFFF; margin-top: 5px;}
+#con2 ul:hover{animation-play-state: paused;}
+#con2 .more{margin-top: 30px;}
+#con2 .more a{
+	font-size: 24px;
+	line-height: 24px;
+}
+#con2 .more a:link,a:visited{color:#4E4B4B;}
+#con2 .more a:hover{color:#070CF4;}
+/*content end*/
+
+/*foot begin*/
+footer{
+	width: 100%;
+	height: 120px;
+	margin-top: 100px;
+	background: #2F0068;
+	color: #fff;
+	text-align: center;
+	}
+footer .foot{
+	width: 100%;
+	height: 120px;
+	margin: 0 auto;
+	position: relative;
+	}
+footer span{
+	width: 58px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	position: absolute;
+	top: -40px;
+	margin-left: -30px;
+	background: url("../image/triangle.png") no-repeat;
+	}
+footer p{
+	line-height: 30px;
+	font-size: 15px;
+	padding-top: 45px;
+}
+/*foot end*/

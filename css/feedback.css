@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+/*清除浏览器默认样式*/
+body,ul,li,p,h1,h2,from,img{
+	margin:0 auto;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	}
+
+/*全局控制样式*/
+body{
+	font-family: "微软雅黑", Helvetica, Arial, sans-serif; 
+	font-size: 14px; 
+	background: url(../image/bg2.jpg) no-repeat;
+	background-size: 100% auto;
+}
+a{
+	text-decoration: none; 
+	cursor: pointer;
+}
+
+/*head begin*/
+header{
+	width: 100%; 
+	height: 50px; 
+	background: #2F0068; 
+	position: fixed;
+	z-index: 2;
+	top: 0;
+}
+#head{
+	width: 1200px; 
+	margin: 0 auto;
+}
+#head .logo{
+	position: absolute;
+	left: 30px;
+	top:8px;
+}
+#head .left{float: left;}
+#head .left li{
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	margin-right: 50px;
+	cursor: pointer;
+}
+#head .right{float: right;}
+#head .right li{
+	float: right;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 50px;
+	cursor: pointer;	
+}
+#head a{color: #FFFFFF; font-size: 15px;}
+#head a:visited{color:#FFFFFF;}
+#head a:hover{color:#FFED00;}
+/*head end*/
+
+/*con begin*/
+#con{
+	width:500px;
+	height:450px;
+	margin: 0 auto;
+	position: absolute;
+	text-align: center;
+	margin-top: 10%;
+	left: 350px;
+	right: 350px;
+	border: 3px solid #DDD;
+	position: absolute;
+	background: #BCB9B9;
+	background-color: rgba(255,255,255,0.3);
+	border-radius: 5%;
+}
+#con h2{
+	height: 55px;
+	line-height: 55px;
+	color:#000000;
+	text-align: center;
+	font-weight:bold;
+	border-bottom:1px dashed #eee;
+}
+#con form{
+	width:400px;
+	margin:auto;
+	margin-top: 25px;
+}
+#con textarea{
+	opacity: 0.7;
+}
+#con label{
+	margin: auto;
+	display: block;
+}
+#con .upload{
+	float: left;
+	padding-left: 20px;
+	left: -20px;
+}
+#con .btn{
+	margin-top: 25px;
+}
+#con .btn .left{
+	width: 60px;
+	height: 30px;
+	border: 0px;
+	border-radius: 5px;
+	margin-right: 70px;
+}
+#con .btn .right{
+	width: 60px;
+	height: 30px;
+	border: 0px;
+	border-radius: 5px;
+	margin-left: 70px;
+}
+#con a{
+	position: absolute;
+	font-size: 16px;
+	font-weight: bold;
+	left: 15px;
+	bottom: 10px;
+}
+#con a:link,:visited{color:#04139A;}
+#con a:hover{color:#5E04AA;}
+/*con end*/

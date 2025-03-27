@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+/*清除浏览器默认样式*/
+body,ul,li,p,h1,h2,from,img{
+	margin:0 auto;
+	padding: 0;
+	border: 0;
+	list-style: none;
+}
+
+/*全局控制样式*/
+body{
+	height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(200deg, #CCFFFF, #F6F6F6);
+    font-size: 14px;
+}
+a{
+	text-decoration: none; 
+	cursor: pointer;
+}
+
+/*head begin*/
+header{
+	width: 100%; 
+	height: 50px; 
+	background: #2F0068; 
+	position: fixed;
+	z-index: 2;
+	top: 0;
+}
+#head{width: 1200px; margin: 0 auto;}
+#head .logo{
+	position: absolute;
+	left: 30px;
+	top:8px;
+}
+#head .left{float: left;}
+#head .left li{
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	margin-right: 50px;
+	cursor: pointer;
+	}
+#head .right{float: right;}
+#head .right li{
+	float: right;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 50px;
+	cursor: pointer;	
+	}
+#head a{
+	color: #FFFFFF; 
+	font-size: 15px;
+}
+#head a:visited{color:#FFFFFF;}
+#head a:hover{color:#FFED00;}
+/*head end*/
+
+/*con begin*/
+#con{
+    background-color: #FFFFFF;
+    width: 650px;
+    height: 420px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+#con .page1{
+    position: absolute;
+    top: -10%;
+    left: 3%;
+    background-color: #9AC1D8;
+    width: 325px;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: 0.5s ease-in-out;
+}
+#con .signin-box,.signup-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#con .hidden{
+    display: none;
+    transition: 0.5s;
+}
+#con h1{
+    text-align: center;
+    margin-bottom: 50px;;
+    color: #FFFFFF;
+    letter-spacing: 5px;
+}
+#con input{
+    background-color: transparent;
+    width: 70%;
+    color: #FFFFFF;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    padding: 10px 0;
+    margin: 10px 0;
+	text-indent: 10px;
+    letter-spacing: 2px;
+}
+#con input::placeholder{
+    color: #FFFFFF;
+}
+#con input:focus{
+    color: #A262AD;
+    outline: none;
+    border-bottom: 1px solid #333333;
+    transition: 0.5s;
+}
+#con input:focus::placeholder{
+    opacity: 0;
+}
+#con .page1 button{
+    width: 70%;
+    margin-top: 50px;
+    background-color: #F6F6F6;
+    outline: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 16px;
+    color: #003366;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+}
+#con .page1 button:hover{
+    background-color: #666699;
+    color: #F6F6F6;
+    transition: background-color 0.5s ease;
+}
+#con .page2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#con .page2.right{
+    right: -2%;
+}
+#con .page2.left{
+    left: -2%;
+}
+#con .page2 h3{
+    color: #8E9AAF;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+#con .page2 span{
+    color: #D2B7D8;
+}
+#con .page2 img{
+    width: 200px;
+    height: 200px;
+    opacity: 0.9;
+    margin: 40px 0;
+    border-radius: 50%;
+}
+#con .page2 .btn{
+	display: flex;
+	gap: 50px;
+}
+#con .page2 button{
+    margin-top: 3%;
+    background-color: #FFFFFF;
+    color: #003366;
+    border: 1px solid #8888B4;
+    padding: 7.5px 10px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#con .page2 button:hover{
+    background-color: #8888B4;
+    color: #FFFFFF;
+}
+/*con end*/

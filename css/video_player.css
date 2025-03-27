@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/*清除浏览器默认样式*/
+body,ul,li,p,h1,h2,from,img{
+	margin:0 auto;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	}
+
+/*全局控制样式*/
+body{
+	font-family: "微软雅黑", Helvetica, Arial, sans-serif; 
+	font-size: 14px; 
+	background: #D6E5F7;
+}
+a{
+	text-decoration: none; 
+	cursor: pointer;
+}
+
+/*head begin*/
+header{
+	width: 100%; 
+	height: 50px; 
+	background: #2F0068; 
+	position: fixed;
+	z-index: 2;
+	top: 0;
+}
+#head{
+	width: 1200px; 
+	margin: 0 auto;
+}
+#head .logo{
+	position: absolute;
+	left: 30px;
+	top:8px;
+}
+#head .left{float: left;}
+#head .left li{
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	margin-right: 50px;
+	cursor: pointer;
+	}
+#head .right{float: right;}
+#head .right li{
+	float: right;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 50px;
+	cursor: pointer;	
+	}
+#head a{
+	color: #FFFFFF; 
+	font-size: 15px;
+}
+#head a:visited{color:#FFFFFF;}
+#head a:hover{color:#FFED00;}
+/*head end*/
+
+/*con begin*/
+#con{
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#con video{
+	width: 80%;
+	height: auto;
+	margin-top: 5%;
+	border-radius: 25px;
+}
+/*con end*/

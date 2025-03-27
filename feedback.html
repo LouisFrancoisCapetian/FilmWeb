@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<title>留言页面</title>
+<link rel="stylesheet" type="text/css" href="css/feedback.css">
+</head>
+<body>
+	<!--head begin-->
+	<header>
+		<div id="head">
+			<ul class="left">
+				<li class="logo">
+					<a href="index.html"><img src="image/logo.png"></a>
+				</li>
+				<li><a href="sub_index.html">首页</a></li>
+				<li><a>浏览发现</a></li>
+				<li><a>话题讨论</a></li>
+			</ul>
+			<ul class="right">
+				<li><a>下载客户端</a></li>
+				<li><a href="feedback.html">留言反馈</a></li>
+				<li><a href="signin.html">登录 | 注册</a></li>
+			</ul>
+		</div>
+	</header>
+	<!--head end-->
+	
+	<!--con begin-->
+	<div id="con">
+		<h2>留言反馈</h2>
+		<form method="post">
+			<label>	
+				<textarea name="remark" cols="50" rows="15" placeholder="请填写您的建议"></textarea>
+			</label>
+			<br/>
+			<label class="upload">
+				上传文件：
+				<input type="hidden" name="MAX_FILE_SIZE" value="1024000" />
+				<input type="file" name="file" size="25" maxlength="100" />
+			</label>
+			<br/>
+			<label class="btn">
+					<input class="left" type="submit" name="submit" value="提交" />
+					<input class="right" type="reset" name="cancel" value="重填" />
+			</label>
+			<a href="sub_index.html">返回首页↩</a>
+		</form>
+	</div>
+	<!--con end-->
+</body>
+</html>
+

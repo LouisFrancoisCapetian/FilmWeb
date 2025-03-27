@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>登录页面</title>
+<link rel="stylesheet" type="text/css" href="css/signin.css">
+</head>
+<body>
+	<!--head begin-->
+	<header>
+		<div id="head">
+			<ul class="left">
+				<li class="logo">
+					<a href="index.html"><img src="image/logo.png"></a>
+				</li>
+				<li><a href="sub_index.html">首页</a></li>
+				<li><a>浏览发现</a></li>
+				<li><a>话题讨论</a></li>
+			</ul>
+			<ul class="right">
+				<li><a>下载客户端</a></li>
+				<li><a href="feedback.html">留言反馈</a></li>
+				<li><a href="signin.html">登录 | 注册</a></li>
+			</ul>
+		</div>
+	</header>
+	<!--head end-->
+	
+	<!--con begin-->
+    <div id="con">
+        <div class="page1">
+            <div class="signin-box">
+                <h1>SIGNIN</h1>
+                <input type="text" placeholder="用户名">
+                <input type="password" placeholder="密码">
+                <button>登录</button>
+            </div>
+            <div class="signup-box hidden">
+                <h1>SIGNUP</h1>
+                <input type="email" placeholder="邮箱">
+                <input type="text" placeholder="用户名">
+                <input type="password" placeholder="密码">
+                <input type="password" placeholder="确认密码">
+                <button>注册</button>
+            </div>
+        </div>
+        <div class="page2 right">
+            <h3>欢迎来到<span>董亚洲的电影网</span></h3>
+            <img src="image/watch.jpg">
+            <div class="btn">
+				<a><button id="signup">注册账号</button></a>
+				<a href="sub_index.html"><button id="back">返回首页</button></a>
+            </div>
+        </div>
+        <div class="page2 left">
+            <h3>欢迎来到<span>董亚洲的电影网</span></h3>
+            <img src="image/watch.jpg">
+            <div class="btn">
+				<a><button id="signin">已有帐号</button></a>
+				<a href="sub_index.html"><button id="back">返回首页</button></a>
+            </div>
+        </div>
+    </div>
+    <script src="js/signin.js"></script>
+    <!--con end-->
+</body>
+</html>
